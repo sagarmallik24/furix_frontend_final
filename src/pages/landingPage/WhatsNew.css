@@ -1,0 +1,71 @@
+.img-log {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-log img {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s all ease-in-out;
+}
+
+.img-log div {
+    height: 300px;
+}
+
+.img-log:hover img {
+    transform: scale(1.2);
+}
+
+.index-date {
+    color: #616161;
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+}
+
+.bg-img-right {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.bg-img-right>img {
+    height: 100%;
+    vertical-align: bottom;
+    transition: all 0.4s;
+}
+
+.index-entry {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+.index-entry:hover img {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+a{
+    transition: all 0.3s ease;
+    color: #3b3b3b;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: -10px;
+}

@@ -1,0 +1,13 @@
+.medicalcenter-s2-event {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.medicalcenter-s2-event a:hover {
+    color: var(--text_hover);
+}
+
+.tab-content>.active {
+    background-color: #fff;
+}

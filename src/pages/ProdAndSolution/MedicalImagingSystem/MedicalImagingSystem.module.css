@@ -1,0 +1,43 @@
+.product_item {
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: rgb(238, 229, 229);
+}
+
+.productImg {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.productImg img {
+    max-width: 100%;
+    height: 360px;
+}
+
+.productContent .productTitle h3 {
+    margin-bottom: 0;
+}
+
+.productContent .productTitle a {
+    color: #282828;
+    font-size: 18px;
+    font-family: "Myriad Pro Light", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.ppCol {
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 780px) {
+    .ppImg {
+        margin-top: 10px;
+    }
+
+    .ppCol {
+        margin-top: 4px;
+    }
+}

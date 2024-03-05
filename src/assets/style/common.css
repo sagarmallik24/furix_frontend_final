@@ -1,0 +1,109 @@
+:root {
+    --blue: #3167eb;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #fa3434;
+    --orange: #ff9017;
+    --yellow: #ffc107;
+    --green: #00b517;
+    --darkGreen: #004420;
+    --buleshgreen: #07c2b9da;
+    --nav-background : var(--light);
+    --active-nav-link : var(--darkGreen);
+    --nav-background-color: var(--danger);
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #545454;
+    --gray-dark: #343a40;
+    --gray-light: #969696;
+    --primary: #3167eb;
+    --secondary: #545454;
+    --success: #00b517;
+    --info: #17a2b8;
+    --warning: #ff9017;
+    --danger: #fa3434;
+    --light: #e4e4e4;
+    --dark: #212529;
+    --primary-light: #5f89f0;
+    --gray: #545454;
+    --gray-light: #969696;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+
+    --text_hover: var(--darkGreen);
+    --text_reverse: var(--white);
+    --footer-text: var(--dark);
+    --footer-text-reverse: var(--white);
+    --footer_background: linear-gradient(260deg, #23ae35 0%, #6ecfa2 100%);
+
+
+    --spanish-gray: #888888;
+
+    --font-family-sans-serif: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /**
+     * typography
+     */
+
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-mr_de_haviland: 'Mr De Haviland', cursive;
+
+    --fs-1: 6rem;
+    --fs-2: 3rem;
+    --fs-3: 2rem;
+    --fs-4: 1.8rem;
+    --fs-5: 1.4rem;
+    --fs-6: 1.2rem;
+
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.marg-top-common{
+    margin-top: 75px;
+    transition: margin-top 1s ease 0s;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* scorll */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #121212;
+}
+
+.form-headline:after {
+    content: "";
+    display: block;
+    padding-top: 10px;
+    border-bottom: 3px solid #ec1c24;
+  }
+
+  @media (max-width: 574px){
+    .marg-top-common {
+        margin-top: 80px !important;
+    }
+}

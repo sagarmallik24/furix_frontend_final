@@ -1,0 +1,137 @@
+@import url('../../assets/style/common.css');
+
+.support-box {
+    text-align: -webkit-right;
+    margin-top: 20px;
+}
+
+.service-item {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    text-align-last: center;
+    justify-content: space-evenly;
+}
+
+.service-item div {
+    background-color: #ffffff80;
+}
+
+.service-item img {
+    height: auto;
+    padding: 5px;
+}
+
+.service-item p {
+    margin: 0px;
+}
+
+.hm-zoom {
+    transition: transform .5s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.hm-zoom:hover {
+    transform: scale(1.1);
+}
+
+/* -----------------------Varities-------------------- */
+
+
+.v-image-container {
+    /* display: flex; */
+    align-items: center;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+}
+
+.image-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    transition: .3s;
+    transition: all .5s ease-in-out;
+    grid-template-columns: 16rem 16rem 16rem 16rem;
+}
+
+
+.demoContaint {
+    margin: 10px;
+    text-align: center;
+}
+
+.demoContaint img {
+    display: block;
+    transition: all .3s ease;
+    border-radius: 0rem;
+}
+
+.demoContaint:hover:nth-child(even) img {
+    border-radius: .5rem 0;
+    box-shadow: 0px 0px 10px rgb(115, 255, 0);
+    -webkit-box-reflect: below 1px red;
+}
+
+.demoContaint:hover:nth-child(odd) img {
+    border-radius: 0 .5rem;
+    box-shadow: 0px 0px 10px rgb(0, 252, 55);
+}
+
+.demoContaint a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.demoContaint:hover a {
+    text-decoration: underline;
+    color: var(--text_hover);
+}
+
+.demoContaint-img {
+    width: calc(15.5rem + 1vmin);
+}
+
+@media screen and (min-width: 995px) and (max-width: 1200px) {
+
+    .image-wrapper {
+        display: grid;
+        grid-gap: 1rem;
+        transition: .3s;
+        transition: all .5s ease-in-out;
+        grid-template-columns: 16rem 16rem 16rem;
+    }
+
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 995px) {
+
+    .image-wrapper {
+        display: grid;
+        grid-gap: 1rem;
+        transition: .3s;
+        transition: all .5s ease-in-out;
+        grid-template-columns: 16rem 16rem;
+    }
+
+
+}
+
+@media screen and (max-width: 770px) {
+    .image-wrapper {
+        display: block;
+        justify-content: center;
+        grid-gap: 1rem;
+        transition: .3s;
+        transition: all .5s ease-in-out;
+    }
+
+    .demoContaint{
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,42 @@
+@import url('../../assets/style/common.css');
+
+.background_video video {
+    width: 100%;
+}
+
+video {
+    max-height: 50%;
+    filter: brightness(75%);
+}
+
+video:hover {
+    filter: brightness(95%);
+}
+
+.a-p-index {
+    font-size: auto;
+    color: var(--spanish-gray);
+}
+
+.centered-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-video p{
+    color: var(--text_reverse);
+    background-color: var(--spanish-gray);
+    opacity: .8;
+  }
+
+@media (max-width:575px) {
+    .centered-video {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        font-size: medium;
+        transform: translate(-50%, -50%);
+    }
+}

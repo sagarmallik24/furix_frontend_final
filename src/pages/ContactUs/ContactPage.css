@@ -1,0 +1,71 @@
+.contact-container {
+    /* background-image: url('../../assets/static/images/furixlogo.png'); */
+    background-color: #fff;
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.input-container {
+    /* height: 3rem; */
+    padding: 1rem;
+    border-width: 0px 0px 1px 0px;
+    margin: 5px 0px;
+    text-align-last: start;
+}
+
+.form-view {
+    text-align-last: center;
+}
+
+.input-error {
+    border: 1px solid rgba(255, 0, 0, .2);
+    animation: vibrate .6s;
+    background: var(--text) !important;
+    box-shadow: 0 0 6px 2px rgba(231, 15, 15, 0.74);
+}
+
+.input-control {
+    padding: 10px;
+    margin-left: 40px;
+
+}
+
+.input-control input {
+    padding: 2px;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: .1px solid;
+}
+
+
+.input-control-phone {
+    padding: 10px;
+    width: 17rem;
+}
+
+.submit-btn {
+    color: var(--text_reverse);
+    background-color: var(--btn_get);
+    margin-left: 520px;
+    /*margin: 15px 5rem;*/
+    border: 20px;
+    border-radius: 20px;
+    height: 3rem;
+    width: 10rem;
+    transition: all .5s;
+}
+
+.submit-btn:hover{
+    /* color: var(--btn_get); */
+    background-color: var(--tan-crayola);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--btn_get);
+}
+
+@media screen and (max-width: 400px) {
+    .submit-btn {
+      margin-left: 37px;
+      width: 7rem;
+    }
+}
+/* -------------------------------------------------- */

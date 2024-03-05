@@ -1,0 +1,117 @@
+/* -------------------------------------------- */
+
+.page-title {
+    padding: 0;
+}
+
+.bg-section {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* background-image: url('../../../assets/static/images/mis1.jpg'); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 540px;
+}
+
+.pos-vertical-center {
+    position: relative;
+    top: 25%;
+}
+
+::selection {
+    background-color: #727272;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.bg-overlay:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.heading .heading--subtitle {
+    color: #616161;
+    font-family: "Myriad Pro Light", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+.heading-8 .heading--title {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.heading .heading--title {
+    font-family: "Myriad Pro Light", Arial, Helvetica, sans-serif;
+    color: #282828;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+
+.heading .divider--line+.heading--desc {
+    margin-top: 30px;
+}
+
+.heading .heading--desc {
+    font-family: "Myriad Pro Light", Arial, Helvetica, sans-serif;
+    color: #3b3b3b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 540px) {
+
+    .bg-section {
+        background-position: -350px top;
+        background-size: auto 250px;
+        height: 600px;
+    }
+
+    .pos-vertical-center {
+        top: 250px !important;
+        -webkit-transform: perspective(1px) translateY(0);
+        -moz-transform: perspective(1px) translateY(0);
+        -o-transform: perspective(1px) translateY(0);
+        transform: perspective(1px) translateY(0);
+    }
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+
+    .bg-section {
+        background-position: -450px top;
+        background-size: auto 400px;
+        height: 750px;
+    }
+
+    .pos-vertical-center {
+        top: 420px !important;
+        -webkit-transform: perspective(1px) translateY(0);
+        -moz-transform: perspective(1px) translateY(0);
+        -o-transform: perspective(1px) translateY(0);
+        transform: perspective(1px) translateY(0);
+    }
+
+}
+

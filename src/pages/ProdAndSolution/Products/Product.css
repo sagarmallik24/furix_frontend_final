@@ -1,0 +1,104 @@
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1vmax;
+    justify-content: center;
+    min-height: 30vh;
+  }
+
+
+  .productCard {
+    width: 16vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    overflow: hidden;
+
+  }
+
+  .productCard>img {
+    width: 16vmax;
+    height: 18vmax;
+    object-fit: contain;
+    transition: all .5s;
+  }
+
+  .productCard>div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .productCard>p {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+  }
+
+  .productCard>span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+
+  .productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+    /* transform: translateY(-1vmax); */
+  }
+
+
+  .ContactBtn {
+    background: #d2d2d2;
+    height: 2rem;
+    width: 10rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .ContactBtn::after {
+    content: '';
+    background: #c40000;
+    height: 1rem;
+    width: 1px;
+    padding: 1px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer
+  }
+
+  .ContactBtn:hover {
+    background: transparent;
+    border: 1px #d2d2d2 solid ;
+    padding: 4px;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .productCard>p {
+      font-size: 1.7vmax;
+    }
+
+    .productCard>div {
+      margin: 0vmax;
+      display: block;
+    }
+
+    .productCard>span {
+      font-size: 1.5vmax;
+    }
+
+    .productCard>div>span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
